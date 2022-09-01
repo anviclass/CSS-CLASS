@@ -5,6 +5,40 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<title></title>
+	<style>
+		.name{
+	position: relative;
+}
+
+.name span{
+	position: absolute;
+	top: -10px;
+	left: 10px;
+	background-color: white;
+	display: none;
+	color: lightblue;
+}
+
+input[type="text"]:focus + span
+{
+	display: block;
+
+}
+
+input[type="text"]:focus::placeholder{
+	color: transparent;
+}
+
+input[type="text"]:focus{
+	border: 1px solid lightblue;
+	outline: none;
+}
+
+input[type="text"]{
+	padding: 8px;
+
+}
+	</style>
 </head>
 <body>
 
